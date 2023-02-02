@@ -6,12 +6,12 @@ const InputField = (props) => {
     const {labelText, type, id, imgSrc} = props;
 
     return (
-        <div class="input-field pt-2">
-            <div class="input-inside">
-                <input class="input-box" type={type} name={id} id={id} required/>
-                <label class="input-label" for={id}>{labelText}</label>
+        <div className="input-field pt-2">
+            <div className="input-inside">
+                <input className="input-box" type={type} name={id} id={id} required/>
+                <label className="input-label" htmlFor={id}>{labelText}</label>
             </div>
-            {imgSrc ? <img class="input-image" src={imgSrc} alt={id+"img"}/> : null}
+            {imgSrc ? <img className="input-image" src={imgSrc} alt={id+"img"}/> : null}
         </div>
     )
 }

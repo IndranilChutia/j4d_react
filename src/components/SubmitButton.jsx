@@ -11,6 +11,6 @@ export default function SubmitButton(props) {
                     backgroundColor: "#05283C",
                     color: "white",
                     marginBottom: "10px"}} 
-            class="py-2 w-100" type="submit" form={form}>{text}</button>
+            className="py-2 w-100" type="submit" form={form}>{text}</button>
   )
 }

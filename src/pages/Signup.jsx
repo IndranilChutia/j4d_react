@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Col, Container, Row} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,11 +22,18 @@ import userProfileImg from '../assets/signupPageImg/userProfile.png'
 import workStatusImg from '../assets/signupPageImg/workStatus.png'
 import resumeImg from '../assets/signupPageImg/resume.png'
 
-document.title="J4D | SignUp"
 
 
 
 const Signup = () => {
+
+
+    useEffect(()=>{
+        document.title="J4D | SignUp"
+        console.log("Hello")
+    });
+
+
     return (
         <main className='main'>
             <Container className='d-flex align-items-center justify-content-center vh-100'>
@@ -58,22 +65,22 @@ const Signup = () => {
                                         <InputField labelText={"Work Status"}  type={"text"} id={"workStatus"} imgSrc={workStatusImg}/>
 
                                         {/* Gender */}
-                                        <div class="gender-selector">
-                                        <div class="gender-label">Gender:</div>
+                                        <div className="gender-selector">
+                                        <div className="gender-label">Gender:</div>
                                        
-                                            <span class="options">
-                                                <input class="gender-radio" type="radio" name="gender" id="male" value="male"/>
-                                                <label class="radio-label" for="male">Male</label>
+                                            <span className="options">
+                                                <input className="gender-radio" type="radio" name="gender" id="male" value="male"/>
+                                                <label className="radio-label" htmlFor="male">Male</label>
                                             </span>    
 
-                                            <span class="options">
-                                                <input class="gender-radio" type="radio" name="gender" id="female" value="female"/>
-                                                <label class="radio-label" for="female">Female</label>  
+                                            <span className="options">
+                                                <input className="gender-radio" type="radio" name="gender" id="female" value="female"/>
+                                                <label className="radio-label" htmlFor="female">Female</label>  
                                             </span>
                                         
-                                            <span class="options">
-                                                <input class="gender-radio" type="radio" name="gender" id="other" value="other"/>
-                                                <label class="radio-label" for="other">Other</label>
+                                            <span className="options">
+                                                <input className="gender-radio" type="radio" name="gender" id="other" value="other"/>
+                                                <label className="radio-label" htmlFor="other">Other</label>
                                             </span>
                                         </div>
 
@@ -81,20 +88,20 @@ const Signup = () => {
                                     </form>
 
                                     {/* Signup Buttons */}
-                                    <div class="signup-buttons-container pt-3 w-100">
+                                    <div className="signup-buttons-container pt-3 w-100">
                                         {/* Native Signup Button */}
                                         <SubmitButton form="signup-form" text="Sign Up"/>
 
                                     {/* Google Signup Button */}
-                                        <button class="signup-button px-2 flex-shrink-1 py-2 google-submit w-100"><img class="google-img" src={googleLogo} alt='google-img'/> Sign Up With Google</button>
+                                        <button className="signup-button px-2 flex-shrink-1 py-2 google-submit w-100"><img className="google-img" src={googleLogo} alt='google-img'/> Sign Up With Google</button>
                                     </div>
 
                                 </div>
 
                                 {/* Terms and Conditions */}
-                                <span class="d-flex align-items-center">
+                                <span className="d-flex align-items-center">
                                     <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions"/>
-                                    <label class="terms-text px-1" for="terms-and-conditions">By Clicking the Sign Up button , you therefore agree to the <Link to="./" class="blue">Privacy Policy</Link> . </label>
+                                    <label className="terms-text px-1" htmlFor="terms-and-conditions">By Clicking the Sign Up button , you therefore agree to the <Link to="./" className="blue">Privacy Policy</Link> . </label>
                                 </span>
 
 

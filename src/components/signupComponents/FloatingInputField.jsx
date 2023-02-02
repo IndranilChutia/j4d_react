@@ -5,12 +5,12 @@ const FloatingInputField = (props) => {
 
     const {labelText, type, id, imgSrc} = props;
     return (
-        <div class="input-field pt-3">
-            <div class="input-inside">
-                <input class="input-box floating-input" type={type} name={id} id={id} required="true"/>
-                <label class="floating-label " for={id}>{labelText}</label>
+        <div className="input-field pt-3">
+            <div className="input-inside">
+                <input className="input-box floating-input" type={type} name={id} id={id} required={true}/>
+                <label className="floating-label " htmlFor={id}>{labelText}</label>
             </div>
-            {imgSrc ? <img class="input-image" src={imgSrc} alt={id+"img"}/> : null}
+            {imgSrc ? <img className="input-image" src={imgSrc} alt={id+"img"}/> : null}
         </div>
     )
 }
