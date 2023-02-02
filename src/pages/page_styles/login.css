@@ -1,0 +1,125 @@
+/* Poppins font import */
+
+/* Light Blue color for links and highlight */
+.blue{
+    color: #287AC8;
+}
+
+.login-main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+
+.imgg{
+    height: 110vh;
+    width:60vw;
+}
+
+
+
+
+.login-container{
+    width: 400px;
+}
+
+.login-title{
+    font-weight: 700;
+}
+
+/* Form Elements */
+
+.form-container{
+    width: 100%;
+}
+
+
+
+/* SignIn Button */
+.login-button{
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.native-submit{
+    background-color: var(--primary);
+    color: white;
+}
+
+.remember-text{
+    font-size: 12px;
+    font-weight: 400;
+    color: #605f5f;
+    padding: 10px 0;
+}
+
+.forgot-password{
+    font-size: 12px;
+    font-weight: 400;
+    color: #605f5f;
+    text-decoration: none;
+}
+
+.forgot-password:hover{
+    color: #287AC8;
+}
+.forgot-password:active{
+    color: #605f5f
+}
+
+/* Other Sign In Methods */
+.line{
+    display: inline;
+    width: 100%;
+    background-color: #000;
+}
+
+.other-methods-text{
+    display: inline-block;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 500;    
+    margin: 0 20px;
+    text-align: center;
+}
+
+.text_3{
+    font-size: 0.8rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px){
+    .line{
+        width: 80%;
+        
+    }
+    .signup-container{
+        width: 80vw;
+    }
+
+    .other-methods-text{
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        font-size: 0.6rem;
+        font-weight: 500;    
+        margin: 0 10px;
+    }
+    
+    .text_3{
+        font-size: 0.6rem;
+    }
+
+    .google_logo{
+        width: 30px;
+    }
+
+    .linkedin_logo{
+        width: 30px;
+    }
+
+}

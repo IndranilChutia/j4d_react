@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './page_styles/signup.css'
 
 // Components
-import InputField from '../components/signupComponents/InputField';
+import InputField from '../components/globalComponents/InputField';
 import FloatingInputField from '../components/signupComponents/FloatingInputField';
 import PhoneInput from '../components/signupComponents/PhoneInput';
 import UploadFile from '../components/signupComponents/UploadFile';
 import ImgCarousel from '../components/signupComponents/ImgCarousel';
-import SubmitButton from '../components/SubmitButton';
+import SubmitButton from '../components/globalComponents/SubmitButton';
 
 import googleLogo from '../assets/google.png';
 
@@ -92,7 +92,7 @@ const Signup = () => {
                                         <SubmitButton form="signup-form" text="Sign Up"/>
 
                                     {/* Google Signup Button */}
-                                        <button className="signup-button px-2 flex-shrink-1 py-2 google-submit w-100"><img className="google-img" src={googleLogo} alt='google-img'/> Sign Up With Google</button>
+                                        <button className="signup-button px-2 flex-shrink-1 py-3 google-submit w-100"><img className="google-img" src={googleLogo} alt='google-img'/> Sign Up With Google</button>
                                     </div>
 
                                 </div>
@@ -100,7 +100,7 @@ const Signup = () => {
                                 {/* Terms and Conditions */}
                                 <span className="d-flex align-items-center">
                                     <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions"/>
-                                    <label className="terms-text px-1" htmlFor="terms-and-conditions">By Clicking the Sign Up button , you therefore agree to the <Link to="./" className="blue">Privacy Policy</Link> . </label>
+                                    <label className="terms-text px-1" htmlFor="terms-and-conditions">By Clicking the Sign Up button , you therefore agree to the <Link to="/" className="blue">Privacy Policy</Link> . </label>
                                 </span>
 
 
