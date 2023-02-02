@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function Login() {
 
-    document.title="J4D | Login";
+    useEffect(()=>{
+        document.title="J4D | Login";
+    });
 
     return (
+
+
+        
+
         <div>Login</div>
     )
 }

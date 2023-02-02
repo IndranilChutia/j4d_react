@@ -30,7 +30,6 @@ const Signup = () => {
 
     useEffect(()=>{
         document.title="J4D | SignUp"
-        console.log("Hello")
     });
 
 
