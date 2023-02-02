@@ -1,0 +1,526 @@
+
+.main{
+    background-color: var(--bg-main);
+    overflow: auto;
+}
+
+.hero-container{
+    /* height: 100vh; */
+    width: 90%;
+    /* margin-top: 0 auto; */
+    max-height: 100vh;
+}
+
+/* Medium Sized Texts (Register, Buttons) */
+.medium-text{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Light Blue color for links and highlight */
+.blue{
+    color: #287AC8;
+}
+
+.row{
+    --bs-gutter-x: 0rem;
+}
+
+/* Left Main Container */
+.signup-container{
+    padding: 40px 48px;
+}
+
+
+/* Tagline sizing */
+.tagline-text{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #454545;
+}
+
+.register-text{
+    padding-bottom: 0.5rem;
+}
+
+.signup-heading{
+    font-size: 1.56rem;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+}
+
+
+.phone-label{
+    position: absolute;
+    font-size: 0.8rem;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    color: #605f5f;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: text;
+}
+
+
+.input-box:focus~.phone-label,
+.input-box:valid~.phone-label,
+.input-box:not(:empty)~.phone-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+
+
+
+
+
+/* Label for gender selector */
+
+.gender-label{
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.options{
+    display: inline-block;
+}
+
+.radio-label{
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--primary);
+    padding: 2px 2px;
+    font-weight: 400;
+    vertical-align: middle;
+
+}
+
+.gender-radio{
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+
+/* Signup Buttons */
+.signup-button{
+    border: 0;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.native-submit{
+    background-color: var(--primary);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.google-submit{
+    background-color: #F6F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Terms and Conditions */
+.terms-text{
+    font-size: 10px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 0;
+}
+
+
+/* Right Part  */
+.carousel{
+    height: 100%;
+}
+.carousel .carousel-inner {
+    height: 100%;
+  }
+
+.carousel-item{
+    height: 100%;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px){
+    .main{
+        background-color: #fff;
+    }
+
+    .hero-container{
+        width: 100%;
+    }
+
+    .signup-container{
+        padding: 1rem 1rem;
+    }
+
+    .signup-heading{
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-bottom: 0.3rem;
+    }
+
+    .medium-text{
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #454545;
+    }
+
+    .register-text{
+        padding-bottom: 0.3rem;
+    }
+    
+    .tagline-text{
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: #454545;
+    }
+
+
+    .signup-form{
+        height: 100%;
+    }
+
+    .input-field select{
+        width: 30%;
+        outline: 0;
+        border: 0;
+        margin-right: 8px;
+        color: #605f5f;
+        font-size: 0.7rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    
+.upload-label{
+    position: absolute;
+    font-size: 0.8rem;
+    top:-10px;
+    left: 0;
+    width: 100%;
+    color: #605f5f;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: text;
+}
+
+.upload-input-box{
+    width: 100%;
+    
+    padding: 0.5rem 0;
+    color: #605f5f;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.input-box:focus~.upload-label,
+.input-box:valid~.upload-label,
+.input-box:not(:empty)~.upload-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+
+    .radio-label{
+        display: inline-block;
+        font-size: 0.7rem;
+        color: var(--primary);
+        padding: 2px 0;
+        font-weight: 400;
+        vertical-align: middle;
+    
+    }
+
+    .gender-radio{
+        vertical-align: middle;
+        margin-left: 0.5rem;
+    }
+
+    .signup-button{
+        border: 0;
+        padding: 10px 0;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+}
+
+/* iPhone SE */
+
+@media screen and (max-width: 380px){
+
+    .hero-container{
+        width: 100%;
+    }
+
+    .input-inside{
+        height: 20px;
+        width: 100%;
+    }
+
+    .radio-label{
+        display: inline-block;
+        font-size: 0.7rem;
+        color: var(--primary);
+        padding: 2px 0;
+        font-weight: 400;
+        vertical-align: middle;
+    
+    }
+
+    .gender-radio{
+        vertical-align: middle;
+        margin-left: 0.5rem;
+    }
+}
+
+
+/* GALAXY FOLD */
+@media screen and (max-width: 280px){
+    
+    .tagline-text{
+        font-size: 0.6rem;
+        font-weight: 500;
+        color: #454545;
+    }
+
+
+    /* Form Elements */
+.input-field{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 18px;
+    
+    /* border: 1px solid black; */
+}
+
+.input-inside{
+    height: 20px;
+    width: 100%;
+}
+
+
+
+.input-label{
+    position: absolute;
+    font-size: 0.8rem;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    color: #605f5f;
+    transition: 0.3s all;
+    cursor: text;
+}
+.dob-label{
+    position: absolute;
+    font-size: 0.7rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #605f5f;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: text;
+}
+
+.dob-input{
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.dob-input:invalid{
+    color: var(--primary);
+}
+
+.input-box{
+    font-size: 0.7rem;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    padding: 0.1rem 0;
+    border-bottom: 2px solid #cccbcb;
+    color: #000;
+}
+
+.input-box:focus,
+.input-box:valid {
+  border-color: var(--primary);
+}
+
+.input-box:focus~.input-label,
+.input-box:valid~.input-label,
+.input-box:not(:empty)~.input-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  top: 0px;
+  color: var(--primary);
+}
+
+.input-box:focus~.phone-label,
+.input-box:valid~.phone-label,
+.input-box:not(:empty)~.phone-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/* Phone Input Field */
+.phone-label{
+    position: absolute;
+    font-size: 0.7rem;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    color: #605f5f;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: text;
+}
+
+.input-field select{
+    width: 40%;
+    outline: 0;
+    border: 0;
+    margin-right: 8px;
+    color: #605f5f;
+    font-size: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.upload-label{
+    position: absolute;
+    font-size: 0.7rem;
+    top:-10px;
+    left: 0;
+    width: 100%;
+    color: #605f5f;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: text;
+}
+
+.upload-input-box{
+    width: 100%;
+    
+    padding: 0.5rem 0;
+    color: #605f5f;
+    font-size: 0.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.input-box:focus~.upload-label,
+.input-box:valid~.upload-label,
+.input-box:not(:empty)~.upload-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/* Transition for DOB Label */
+
+.input-box:focus~.dob-label,
+.input-box:valid~.dob-label,
+.input-box:not(:empty)~.dob-label {
+  color: var(--primary);
+}
+
+/* Input box image */
+.input-image{
+    position: absolute;
+    top:14px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+}
+
+/* Label for gender selector */
+
+.gender-label{
+    display: inline-block;
+    font-size: 0.7rem;
+    color: var(--primary);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.options{
+    display: inline-block;
+}
+
+.radio-label{
+    display: inline-block;
+    font-size: 0.7rem;
+    color: var(--primary);
+    padding: 2px 0;
+    font-weight: 400;
+    vertical-align: middle;
+
+}
+
+.gender-radio{
+    vertical-align: middle;
+    margin-left: 0.2rem;
+}
+
+
+/* Signup Buttons */
+.signup-button{
+    border: 0;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.native-submit{
+    background-color: var(--primary);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.google-submit{
+    background-color: #F6F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.google-img{
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+
+/* Terms and Conditions */
+.terms-text{
+    font-size: 8px;
+    font-weight: 400;
+    color: #000;
+    padding: 8px 0;
+}
+}

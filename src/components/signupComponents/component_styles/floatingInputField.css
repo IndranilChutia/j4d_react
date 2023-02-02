@@ -1,0 +1,63 @@
+/* Form Elements */
+.input-field{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 18px;
+    
+    /* border: 1px solid black; */
+}
+
+.input-inside{
+    height: 30px;
+    width: 100%;
+}
+
+.floating-label{
+    position: absolute;
+    font-size: 0.8rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #605f5f;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: text;
+}
+
+.floating-input{
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.floating-input:invalid{
+    color: var(--primary);
+}
+
+.input-box{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    padding: 0.1rem 0;
+    border-bottom: 2px solid #cccbcb;
+    color: #000;
+}
+
+.input-box:focus,
+.input-box:valid {
+  border-color: var(--primary);
+}
+
+.input-box:focus~.floating-label,
+.input-box:valid~.floating-label,
+.input-box:not(:empty)~.floating-label {
+  color: var(--primary);
+}
+
+.input-image{
+    position: absolute;
+    top:14px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+}

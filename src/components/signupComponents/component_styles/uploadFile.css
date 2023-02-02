@@ -1,0 +1,30 @@
+.upload-label{
+    position: absolute;
+    font-size: 0.8rem;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    color: #605f5f;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: text;
+}
+
+
+.input-box:focus~.upload-label,
+.input-box:valid~.upload-label,
+.input-box:not(:empty)~.upload-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.upload-input-box{
+    width: 100%;
+    
+    padding: 0.2rem 0;
+    color: #605f5f;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
