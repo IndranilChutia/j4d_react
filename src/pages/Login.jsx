@@ -67,16 +67,16 @@ function Login() {
                             <div className="d-flex justify-content-around px-5 my-3">
                                 {/* Google Logo */}
                                 <Link to={"#"}>
-                                    <img class='google_logo' src="https://res.cloudinary.com/du5vlissg/image/upload/v1674555958/logos_google-icon_oerafv.png" alt="google-logo" />
+                                    <img className='google_logo' src="https://res.cloudinary.com/du5vlissg/image/upload/v1674555958/logos_google-icon_oerafv.png" alt="google-logo" />
                                 </Link>
 
                                 {/* LinkedIn Logo */}
                                 <Link to={"#"}>
-                                    <img class='linkedin_logo' src="https://res.cloudinary.com/du5vlissg/image/upload/v1674556022/Path_2520_c3j5f1.png" alt="linkedin-logo" />
+                                    <img className='linkedin_logo' src="https://res.cloudinary.com/du5vlissg/image/upload/v1674556022/Path_2520_c3j5f1.png" alt="linkedin-logo" />
                                 </Link>
                             </div>
-                            <p class="text_3 text-center">Don't have an account yet? 
-                                <Link to={"/signup"} class="blue text-decoration-none"> Register Today!</Link>
+                            <p className="text_3 text-center">Don't have an account yet? 
+                                <Link to={"/signup"} className="blue text-decoration-none"> Register Today!</Link>
                             </p>
 
                         </div>
